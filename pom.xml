@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.horiondigital.hubspot</groupId>
+    <artifactId>hubspot-client</artifactId>
+    <version>0.0.1</version>
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <rest-client.version>[4.0.0,5.0)</rest-client.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.horiondigital.rest</groupId>
+            <artifactId>rest-client</artifactId>
+            <version>${rest-client.version}</version>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>horiondigital.remote</id>
+            <name>Horion Digital private repo</name>
+            <url>https://nexus.horion.dev/repository/maven-horion</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>horiondigital.remote</id>
+            <name>Horion Digital private repo</name>
+            <url>https://nexus.horion.dev/repository/maven-horion</url>
+        </repository>
+    </distributionManagement>
+
+</project>
